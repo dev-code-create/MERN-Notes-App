@@ -1,10 +1,9 @@
 import express from "express";
-import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./config/db";
-import noteRoutes from "./routes/noteRoutes";
-import { errorHandler, notFound } from "./middleware/errorMiddleware";
+import connectDB from "./config/db.js";
+import noteRoutes from "./routes/noteRoutes.js";
+import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
 
 dotenv.config();
 const app = express();
